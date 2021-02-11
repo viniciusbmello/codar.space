@@ -2,6 +2,7 @@ import React from 'react'
 import Router from 'next/router'
 import NProgress from 'nprogress'
 
+import Header from '../components/header'
 import ParticleComponent from '../components/particles'
 
 import { ThemeProvider } from 'styled-components'
@@ -16,6 +17,7 @@ const App = ({ Component, pageProps }) => {
   return (
     <ThemeProvider theme={theme}>
       <GlobalStyle />
+      <Header />
       <div id='wrapper'>
         <Component {...pageProps} />
       </div>
