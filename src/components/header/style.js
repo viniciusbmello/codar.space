@@ -11,7 +11,7 @@ const Layout = styled.div`
   width: 100vw;
   height: 6rem;
 
-  z-index: 999;
+  z-index: 998;
 
   .header-content {
     margin: auto;

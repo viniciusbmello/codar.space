@@ -7,6 +7,7 @@ import ParticleComponent from '../components/particles'
 
 import { ThemeProvider } from 'styled-components'
 import GlobalStyle from '../styles/global'
+import NProgressStyle from '../styles/nprogress'
 import theme from '../styles/theme'
 
 Router.events.on('routeChangeStart', (url) => NProgress.start())
@@ -17,6 +18,7 @@ const App = ({ Component, pageProps }) => {
   return (
     <ThemeProvider theme={theme}>
       <GlobalStyle />
+      <NProgressStyle />
       <Header />
       <div id='wrapper'>
         <Component {...pageProps} />
