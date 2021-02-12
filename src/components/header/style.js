@@ -24,52 +24,44 @@ const Layout = styled.div`
   }
 
   li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
     float: left;
-    display: inline;
+    width: 10rem;
+    height: 3rem;
   }
 
   a {
-    position: relative;
-    display: block;
-    color: white;
-    text-align: center;
+    display: inline-block;
     text-decoration: none;
     text-transform: uppercase;
-    padding: 2rem 5rem;
-    font: 700 2rem sans-serif;
+    font: 400 2rem sans-serif;
+    color: white;
+    overflow: hidden;
   }
 
-  a:not(.active):hover .link-space {
-    transform: translateZ(0) rotateX(90deg);
+  a span {
+    display: inline-block;
+    position: relative;
+    transition: all 0.2s linear;
   }
 
-  .link-space {
+  a span:after {
+    content: attr(data-hover);
     position: absolute;
-    display: block;
-    top: 0;
+    top: -2rem;
     left: 0;
-    pointer-events: none;
-    transition: all 0.2s ease-out;
-    transform-style: preserve-3d;
-    margin: 1.25rem 2.5rem;
+    font-weight: 700;
   }
 
-  .fare,
-  .back {
-    width: 100%;
-    height: 100%;
-    display: block;
-    position: absolute;
-    box-sizing: border-box;
-    margin: auto;
+  .active a span {
+    font-weight: 700;
   }
 
-  .fare {
-    transform: rotateX(0deg) translateZ(1rem);
-  }
-
-  .back {
-    transform: rotateX(-90deg) translateZ(1rem);
+  a:hover span {
+    transform: translateY(2rem);
   }
 `
 

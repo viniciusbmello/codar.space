@@ -1,31 +1,28 @@
 import React from 'react'
 import Link from 'next/link'
+import { useRouter } from 'next/router'
 
 import Layout from './style'
 
 const Header = () => {
+  const router = useRouter()
+
   return (
     <Layout>
       <div className='header-content'>
         <h1>Logo</h1>
         <nav>
-          <li>
+          <li className={router.pathname === '/' ? 'active' : ''}>
             <Link href='/'>
               <a>
-                <span className='link-space'>
-                  <span className='fare'>Index</span>
-                  <span className='back'>Index</span>
-                </span>
+                <span data-hover='Index'>Index</span>
               </a>
             </Link>
           </li>
-          <li>
+          <li className={router.pathname === '/about' ? 'active' : ''}>
             <Link href='/about'>
               <a>
-                <span className='link-space'>
-                  <span className='fare'>About</span>
-                  <span className='back'>About</span>
-                </span>
+                <span data-hover='About'>About</span>
               </a>
             </Link>
           </li>

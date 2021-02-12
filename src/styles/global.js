@@ -18,6 +18,8 @@ const GlobalStyle = createGlobalStyle`
 
   body {
     background: radial-gradient(at 50% 100%, rgba(64,64,96,1), black); 
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
   }
 
   #__next {
