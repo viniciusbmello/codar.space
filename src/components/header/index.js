@@ -15,14 +15,21 @@ const Header = () => {
           <li className={router.pathname === '/' ? 'active' : ''}>
             <Link href='/'>
               <a>
-                <span data-hover='Index'>Index</span>
+                <span data-hover='início'>início</span>
               </a>
             </Link>
           </li>
           <li className={router.pathname === '/about' ? 'active' : ''}>
             <Link href='/about'>
               <a>
-                <span data-hover='About'>About</span>
+                <span data-hover='sobre'>sobre</span>
+              </a>
+            </Link>
+          </li>
+          <li className={router.pathname === '/contact' ? 'active' : ''}>
+            <Link href='/contact'>
+              <a>
+                <span data-hover='contato'>contato</span>
               </a>
             </Link>
           </li>

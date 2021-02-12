@@ -33,8 +33,6 @@ const Layout = styled.div`
     justify-content: center;
 
     float: left;
-    width: 10rem;
-    height: 3rem;
   }
 
   a {
@@ -44,6 +42,7 @@ const Layout = styled.div`
     font: 400 2rem sans-serif;
     color: white;
     overflow: hidden;
+    padding: 0 2rem;
   }
 
   a span {
