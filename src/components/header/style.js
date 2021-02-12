@@ -40,7 +40,7 @@ const Layout = styled.div`
     text-decoration: none;
     text-transform: uppercase;
     font: 400 2rem sans-serif;
-    color: white;
+    color: lightgray;
     overflow: hidden;
     padding: 0 2rem;
   }
@@ -56,11 +56,12 @@ const Layout = styled.div`
     position: absolute;
     top: -2rem;
     left: 0;
-    font-weight: 700;
+    color: white;
   }
 
   .active a span {
     font-weight: 700;
+    color: white;
   }
 
   li:not(.active) a:hover span {
