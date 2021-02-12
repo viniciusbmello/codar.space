@@ -23,6 +23,10 @@ const Layout = styled.div`
     justify-content: space-between;
   }
 
+  h1 {
+    margin-left: 1rem;
+  }
+
   li {
     display: flex;
     align-items: center;
@@ -60,7 +64,7 @@ const Layout = styled.div`
     font-weight: 700;
   }
 
-  a:hover span {
+  li:not(.active) a:hover span {
     transform: translateY(2rem);
   }
 `
