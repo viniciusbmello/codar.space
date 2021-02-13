@@ -40,7 +40,7 @@ const Layout = styled.div`
     display: inline-block;
     text-decoration: none;
     text-transform: uppercase;
-    font: 400 2.4rem monospace;
+    font: 400 2rem monospace;
     color: lightgray;
     overflow: hidden;
     padding: 0 1rem;
