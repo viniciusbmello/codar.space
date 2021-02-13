@@ -10,7 +10,9 @@ const Header = () => {
   return (
     <Layout>
       <div className='header-content'>
-        <h1>Logo</h1>
+        <h1>
+          <strong>CODAR</strong>.SPACE
+        </h1>
         <nav>
           <li className={router.pathname === '/' ? 'active' : ''}>
             <Link href='/'>

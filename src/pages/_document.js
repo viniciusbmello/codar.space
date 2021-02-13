@@ -1,5 +1,5 @@
 import React from 'react'
-import Document from 'next/document'
+import Document, { Head, Html, Main, NextScript } from 'next/document'
 import { ServerStyleSheet } from 'styled-components'
 
 export default class MyDocument extends Document {
@@ -27,5 +27,27 @@ export default class MyDocument extends Document {
     } finally {
       sheet.seal()
     }
+  }
+
+  render() {
+    return (
+      <Html lang='pt'>
+        <Head>
+          <meta charSet='utf-8' />
+          <title>Codar.Space</title>
+          {/* SEO Meta Tags */}
+          <meta itemProp='name' content='Codar Space' />
+          <meta
+            name='description'
+            content='Desenvolvimento de sites modernos. Feito de forma personalizada para levar toda a sua identidade para a Web.'
+          />
+          <link rel='icon' href='/favicon.ico' />
+        </Head>
+        <body>
+          <Main />
+          <NextScript />
+        </body>
+      </Html>
+    )
   }
 }

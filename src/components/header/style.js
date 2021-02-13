@@ -25,6 +25,7 @@ const Layout = styled.div`
 
   h1 {
     margin-left: 1rem;
+    font: 400 2.8rem monospace;
   }
 
   li {
@@ -39,10 +40,10 @@ const Layout = styled.div`
     display: inline-block;
     text-decoration: none;
     text-transform: uppercase;
-    font: 400 2rem sans-serif;
+    font: 400 2.4rem monospace;
     color: lightgray;
     overflow: hidden;
-    padding: 0 2rem;
+    padding: 0 1rem;
   }
 
   a span {
