@@ -14,27 +14,29 @@ const Header = () => {
           <strong>CODAR</strong>.SPACE
         </h1>
         <nav>
-          <li className={router.pathname === '/' ? 'active' : ''}>
-            <Link href='/'>
-              <a>
-                <span data-hover='início'>início</span>
-              </a>
-            </Link>
-          </li>
-          <li className={router.pathname === '/about' ? 'active' : ''}>
-            <Link href='/about'>
-              <a>
-                <span data-hover='sobre'>sobre</span>
-              </a>
-            </Link>
-          </li>
-          <li className={router.pathname === '/contact' ? 'active' : ''}>
-            <Link href='/contact'>
-              <a>
-                <span data-hover='contato'>contato</span>
-              </a>
-            </Link>
-          </li>
+          <ul>
+            <li className={router.pathname === '/' ? 'active' : ''}>
+              <Link href='/'>
+                <a>
+                  <span data-hover='início'>início</span>
+                </a>
+              </Link>
+            </li>
+            <li className={router.pathname === '/about' ? 'active' : ''}>
+              <Link href='/about'>
+                <a>
+                  <span data-hover='sobre'>sobre</span>
+                </a>
+              </Link>
+            </li>
+            <li className={router.pathname === '/contact' ? 'active' : ''}>
+              <Link href='/contact'>
+                <a>
+                  <span data-hover='contato'>contato</span>
+                </a>
+              </Link>
+            </li>
+          </ul>
         </nav>
       </div>
     </Layout>
