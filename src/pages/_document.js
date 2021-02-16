@@ -34,7 +34,6 @@ export default class MyDocument extends Document {
       <Html lang='pt'>
         <Head>
           <meta charSet='utf-8' />
-          <title>Codar.Space</title>
           {/* SEO Meta Tags */}
           <meta itemProp='name' content='Codar Space' />
           <meta

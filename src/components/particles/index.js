@@ -1,26 +1,22 @@
-import React from 'react'
-import { useSpring, animated } from 'react-spring'
+import React, { useEffect } from 'react'
+import Parallax from 'parallax-js'
 import Particles from 'react-particles-js'
 
 import Layout from './style'
 
-const calc = (x, y) => [x - window.innerWidth / 2, y - window.innerHeight / 2]
-const translate = (x, y) => `translate3d(${x / 10}px,${y / 10}px,0)`
-
 const ParticleComponent = () => {
-  const [props, set] = useSpring(() => ({
-    xy: [0, 0],
-    config: { mass: 10, tension: 550, friction: 140 }
-  }))
+  useEffect(() => {
+    const scene = document.getElementById('scene')
+    const parallaxInstance = new Parallax(scene)
+
+    parallaxInstance.enable()
+
+    return () => parallaxInstance.disable()
+  }, [])
+
   return (
-    <Layout>
-      <animated.div
-        style={{
-          transform: props.xy.interpolate(translate),
-          zIndex: -1
-        }}
-        onMouseMove={({ clientX: x, clientY: y }) => set({ xy: calc(x, y) })}
-      >
+    <Layout id='scene'>
+      <div data-depth={0.1}>
         <Particles
           width='100vw'
           height='100vh'
@@ -28,34 +24,37 @@ const ParticleComponent = () => {
             particles: {
               number: {
                 value: 100,
-                density: { enable: true, value_area: 1500 }
+                density: { enable: true, value_area: 1000 }
               },
               lineLinked: { enable: false },
-              move: { speed: 0.2 },
+              move: { speed: 0.5 },
               size: {
                 value: 2,
                 random: true,
                 anim: {
                   enable: false,
-                  size_min: 0.1
+                  size_min: 0.2
                 }
               }
             },
             interactivity: {
               detect_on: 'window',
-              events: { onhover: { enable: true, mode: 'connect' } },
+              events: {
+                onhover: { enable: true, mode: 'grab' },
+                resize: true
+              },
               modes: {
-                connect: {
+                grab: {
                   distance: 200,
                   radius: 200,
-                  links: { opacity: 0.1 }
+                  links: { opacity: 0.2 }
                 }
               }
             },
             retina_detect: true
           }}
         />
-      </animated.div>
+      </div>
     </Layout>
   )
 }

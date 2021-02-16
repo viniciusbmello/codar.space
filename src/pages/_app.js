@@ -20,10 +20,10 @@ const App = ({ Component, pageProps }) => {
       <GlobalStyle />
       <NProgressStyle />
       <Header />
+      <ParticleComponent />
       <div id='wrapper'>
         <Component {...pageProps} />
       </div>
-      <ParticleComponent />
     </ThemeProvider>
   )
 }
