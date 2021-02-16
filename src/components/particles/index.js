@@ -15,10 +15,10 @@ const ParticleComponent = () => {
 
   return (
     <Layout ref={ref}>
-      <div data-depth={0.5}>
+      <div data-depth={0.4}>
         <Particles
-          width='100vw'
-          height='100vh'
+          width='120vw'
+          height='110vh'
           params={{
             particles: {
               number: {
