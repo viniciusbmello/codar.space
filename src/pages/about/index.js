@@ -18,7 +18,12 @@ const About = () => {
         trackOnWindow={true}
       >
         <Layout>
-          <h1>{'>_ '}Sobre</h1>
+          <h1>
+            <div className='fakeClose' />
+            <div className='fakeMinimize' />
+            <div className='fakeZoom' />
+            Sobre
+          </h1>
           <p>
             Nome: Vinícius Mello <br />
             Email: viniciusbmello@gmail.com <br />
