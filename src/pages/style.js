@@ -18,6 +18,10 @@ const Layout = styled.div`
 
     display: flex;
     align-items: center;
+
+    -webkit-user-select: none; /* Safari */
+    -ms-user-select: none; /* IE 10 and IE 11 */
+    user-select: none; /* Standard syntax */
   }
 
   p {
