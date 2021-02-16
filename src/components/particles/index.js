@@ -22,8 +22,8 @@ const ParticleComponent = () => {
           params={{
             particles: {
               number: {
-                value: 160,
-                density: { enable: true, value_area: 800 }
+                value: 100,
+                density: { enable: true, value_area: 1000 }
               },
               lineLinked: { enable: false },
               move: { speed: 0.3 },
@@ -44,8 +44,8 @@ const ParticleComponent = () => {
               },
               modes: {
                 grab: {
-                  distance: 200,
-                  radius: 200,
+                  distance: 240,
+                  radius: 240,
                   links: { opacity: 0.2 }
                 }
               }
