@@ -1,23 +1,25 @@
-import React, { useState, useEffect } from 'react'
+import React, { useRef, useEffect } from 'react'
 import Parallax from 'parallax-js'
 import Particles from 'react-particles-js'
 
 import Layout from './style'
 
 const ParticleComponent = () => {
+  const ref = useRef(null)
+
   useEffect(() => {
     if (typeof window === 'undefined') return
-    const scene = document.getElementById('scene')
-    const parallaxInstance = new Parallax(scene)
+    // const scene = document.getElementById('scene')
+    // const parallaxInstance = new Parallax(scene)
+    const parallaxInstance = new Parallax(ref.current)
 
     parallaxInstance.enable()
-    console.log('Teste')
 
     return () => parallaxInstance.disable()
   }, [])
 
   return (
-    <Layout id='scene'>
+    <Layout ref={ref}>
       <div data-depth={0.2}>
         <Particles
           width='100vw'
