@@ -11,6 +11,10 @@ const Layout = styled.div`
   width: 100vw;
   height: 6rem;
 
+  -webkit-user-select: none; /* Safari */
+  -ms-user-select: none; /* IE 10 and IE 11 */
+  user-select: none; /* Standard syntax */
+
   z-index: 998;
 
   .header-content {
