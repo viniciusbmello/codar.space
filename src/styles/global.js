@@ -12,7 +12,7 @@ const GlobalStyle = createGlobalStyle`
   }
 
   html, body, #__next {
-    height: 100vh;
+    height: 100%;
     overflow: hidden;
   }
 
