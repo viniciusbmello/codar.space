@@ -15,7 +15,7 @@ const Index = () => {
         tiltMaxAngleY={10}
         tiltAxis={'y'}
         glareEnable={true}
-        glareMaxOpacity={0.1}
+        glareMaxOpacity={0.2}
         glareColor='black'
         glarePosition='all'
         gyroscope={true}
