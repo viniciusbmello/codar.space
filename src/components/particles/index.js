@@ -26,7 +26,7 @@ const ParticleComponent = () => {
                 density: { enable: true, value_area: 1000 }
               },
               lineLinked: { enable: false },
-              move: { speed: 0.5 },
+              move: { speed: 0.3 },
               size: {
                 value: 2,
                 random: true,
