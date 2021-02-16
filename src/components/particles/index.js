@@ -16,7 +16,7 @@ const ParticleComponent = () => {
 
   return (
     <Layout id='scene'>
-      <div data-depth={0.1}>
+      <div data-depth={0.2}>
         <Particles
           width='100vw'
           height='100vh'

@@ -17,7 +17,7 @@ const GlobalStyle = createGlobalStyle`
   }
 
   body {
-    background: radial-gradient(at 50% 100%, rgba(32,32,48,1), black); 
+    background: radial-gradient(at 50% 100%, rgba(48,48,96,0.9), black); 
     -webkit-font-smoothing: antialiased;
     text-rendering: optimizeLegibility;
   }
