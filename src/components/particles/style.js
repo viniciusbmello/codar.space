@@ -7,7 +7,6 @@ const Layout = styled.div`
   align-items: center;
   overflow: hidden;
 
-  opacity: 1;
   animation: opacityChange 3s;
 
   @keyframes opacityChange {
