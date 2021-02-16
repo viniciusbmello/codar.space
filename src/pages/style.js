@@ -6,7 +6,7 @@ const Layout = styled.div`
   backdrop-filter: blur(4px);
   -webkit-backdrop-filter: blur(4px);
   border-radius: 0.5rem;
-  max-width: 40rem;
+  max-width: 30rem;
 `
 
 export default Layout
