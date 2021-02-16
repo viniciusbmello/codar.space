@@ -8,13 +8,8 @@ const ParticleComponent = () => {
   const ref = useRef(null)
 
   useEffect(() => {
-    if (typeof window === 'undefined') return
-    // const scene = document.getElementById('scene')
-    // const parallaxInstance = new Parallax(scene)
     const parallaxInstance = new Parallax(ref.current)
-
     parallaxInstance.enable()
-
     return () => parallaxInstance.disable()
   }, [])
 
