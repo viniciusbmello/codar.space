@@ -11,7 +11,7 @@ const Header = () => {
     <Layout>
       <div className='header-content'>
         <h1>
-          <strong>CODAR</strong>.SPACE
+          <strong>codar</strong>.space
         </h1>
         <nav>
           <ul>

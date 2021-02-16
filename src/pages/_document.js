@@ -34,6 +34,25 @@ export default class MyDocument extends Document {
       <Html lang='pt'>
         <Head>
           <meta charSet='utf-8' />
+          <link rel='dns-prefetch' href='https://fonts.gstatic.com' />
+          <link rel='preconnect' href='https://fonts.gstatic.com' />
+          <link
+            rel='preload'
+            as='style'
+            href='https://fonts.googleapis.com/css2?family=Montserrat&display=swap'
+          />
+          <link
+            rel='stylesheet'
+            media='print'
+            onLoad='this.media="all"'
+            href='https://fonts.googleapis.com/css2?family=Montserrat&display=swap'
+          />
+          <noscript>
+            <link
+              rel='stylesheet'
+              href='https://fonts.googleapis.com/css2?family=Montserrat&display=swap'
+            />
+          </noscript>
           {/* SEO Meta Tags */}
           <meta itemProp='name' content='Codar Space' />
           <meta

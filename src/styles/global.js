@@ -29,7 +29,7 @@ const GlobalStyle = createGlobalStyle`
   }
 
   body, input, button, textarea {
-    font: 400 1.6rem monospace;
+    font: 400 1.6rem 'Montserrat', sans-serif;
     color: white;
   }
 
