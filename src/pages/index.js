@@ -15,14 +15,14 @@ const Index = () => {
         tiltMaxAngleY={10}
         tiltAxis={'y'}
         glareEnable={true}
-        glareMaxOpacity={0.2}
+        glareMaxOpacity={0.25}
         glareColor='black'
         glarePosition='all'
         gyroscope={true}
         trackOnWindow={true}
       >
         <Layout>
-          <h1 style={{ fontSize: '2.4rem' }}>{'>_ '}Lorem Ipsum</h1>
+          <h1 style={{ fontSize: '2.4rem' }}>{'>_ '}Início</h1>
           <br />
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam non

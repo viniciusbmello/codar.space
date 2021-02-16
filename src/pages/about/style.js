@@ -10,10 +10,6 @@ const Layout = styled.div`
   margin: auto;
   max-width: 50rem;
 
-  -webkit-user-select: none; /* Safari */
-  -ms-user-select: none; /* IE 10 and IE 11 */
-  user-select: none; /* Standard syntax */
-
   transform-style: preserve-3d;
 
   p {

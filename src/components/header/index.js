@@ -29,6 +29,7 @@ const Header = () => {
                 </a>
               </Link>
             </li>
+            {/*
             <li className={router.pathname === '/contact' ? 'active' : ''}>
               <Link href='/contact'>
                 <a>
@@ -36,6 +37,7 @@ const Header = () => {
                 </a>
               </Link>
             </li>
+            */}
           </ul>
         </nav>
       </div>
