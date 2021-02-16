@@ -12,14 +12,14 @@ const Index = () => {
       </Head>
       <Tilt
         tiltReverse={true}
-        tiltMaxAngleX={30}
-        tiltMaxAngleY={30}
-        trackOnWindow={true}
-        gyroscope={true}
+        tiltMaxAngleY={10}
+        tiltAxis={'y'}
         glareEnable={true}
         glareMaxOpacity={0.1}
         glareColor='black'
         glarePosition='all'
+        gyroscope={true}
+        trackOnWindow={true}
       >
         <Layout>
           <h1>{'>_ '}Lorem Ipsum</h1>
