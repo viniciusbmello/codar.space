@@ -10,7 +10,7 @@ const Layout = styled.div`
   height: 100vh;
   width: 100vw;
 
-  animation: grow 1s;
+  animation: grow 0.5s;
 
   @keyframes grow {
     from {

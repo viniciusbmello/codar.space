@@ -25,7 +25,7 @@ const Layout = styled.div`
 
   h1 {
     margin-left: 1rem;
-    font: 400 2.8rem monospace;
+    font: 400 2rem monospace;
   }
 
   li {
@@ -40,7 +40,7 @@ const Layout = styled.div`
     display: inline-block;
     text-decoration: none;
     text-transform: uppercase;
-    font: 400 2rem monospace;
+    font: 400 1.6rem monospace;
     color: lightgray;
     overflow: hidden;
     padding: 0 1rem;
