@@ -6,11 +6,12 @@ import Layout from './style'
 
 const ParticleComponent = () => {
   useEffect(() => {
-    if (typeof window !== 'undefined') return
+    if (typeof window === 'undefined') return
     const scene = document.getElementById('scene')
     const parallaxInstance = new Parallax(scene)
 
     parallaxInstance.enable()
+    console.log('Teste')
 
     return () => parallaxInstance.disable()
   }, [])
