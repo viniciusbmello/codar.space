@@ -6,16 +6,13 @@ import Layout from './style'
 
 const ParticleComponent = () => {
   useEffect(() => {
-    if (typeof window !== 'undefined') {
-      document.addEventListener('mousemove', () => {
-        const scene = document.getElementById('scene')
-        const parallaxInstance = new Parallax(scene)
+    if (typeof window !== 'undefined') return
+    const scene = document.getElementById('scene')
+    const parallaxInstance = new Parallax(scene)
 
-        parallaxInstance.enable()
+    parallaxInstance.enable()
 
-        return () => parallaxInstance.disable()
-      })
-    }
+    return () => parallaxInstance.disable()
   }, [])
 
   return (
