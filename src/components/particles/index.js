@@ -15,15 +15,15 @@ const ParticleComponent = () => {
 
   return (
     <Layout ref={ref}>
-      <div data-depth={0.2}>
+      <div data-depth={0.5}>
         <Particles
           width='100vw'
           height='100vh'
           params={{
             particles: {
               number: {
-                value: 100,
-                density: { enable: true, value_area: 1000 }
+                value: 160,
+                density: { enable: true, value_area: 800 }
               },
               lineLinked: { enable: false },
               move: { speed: 0.3 },
