@@ -33,10 +33,6 @@ const Layout = styled.div`
     line-height: 2rem;
   }
 
-  span {
-    color: magenta;
-  }
-
   .fakeClose {
     width: 1.2rem;
     height: 1.2rem;
