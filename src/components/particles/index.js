@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react'
+import React, { useState, useEffect } from 'react'
 import Parallax from 'parallax-js'
 import Particles from 'react-particles-js'
 
@@ -6,12 +6,16 @@ import Layout from './style'
 
 const ParticleComponent = () => {
   useEffect(() => {
-    const scene = document.getElementById('scene')
-    const parallaxInstance = new Parallax(scene)
+    if (typeof window !== 'undefined') {
+      document.addEventListener('mousemove', () => {
+        const scene = document.getElementById('scene')
+        const parallaxInstance = new Parallax(scene)
 
-    parallaxInstance.enable()
+        parallaxInstance.enable()
 
-    return () => parallaxInstance.disable()
+        return () => parallaxInstance.disable()
+      })
+    }
   }, [])
 
   return (
