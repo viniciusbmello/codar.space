@@ -23,7 +23,7 @@ const ParticleComponent = () => {
             particles: {
               number: {
                 value: 100,
-                density: { enable: true, value_area: 1000 }
+                density: { enable: true, value_area: 2000 }
               },
               lineLinked: { enable: false },
               move: { speed: 0.3 },
@@ -39,14 +39,14 @@ const ParticleComponent = () => {
             interactivity: {
               detect_on: 'window',
               events: {
-                onhover: { enable: true, mode: 'grab' },
+                onhover: { enable: true, mode: 'connect' },
                 resize: true
               },
               modes: {
-                grab: {
-                  distance: 240,
-                  radius: 240,
-                  links: { opacity: 0.2 }
+                connect: {
+                  distance: 160,
+                  radius: 220,
+                  links: { opacity: 0.1 }
                 }
               }
             },
