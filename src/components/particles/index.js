@@ -23,7 +23,7 @@ const ParticleComponent = () => {
             particles: {
               number: {
                 value: 100,
-                density: { enable: true, value_area: 2000 }
+                density: { enable: true, value_area: 5000 }
               },
               lineLinked: { enable: false },
               move: { speed: 0.3 },
@@ -44,8 +44,8 @@ const ParticleComponent = () => {
               },
               modes: {
                 connect: {
-                  distance: 160,
-                  radius: 220,
+                  distance: 200,
+                  radius: 240,
                   links: { opacity: 0.1 }
                 }
               }
