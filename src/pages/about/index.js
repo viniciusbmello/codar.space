@@ -18,8 +18,7 @@ const About = () => {
         trackOnWindow={true}
       >
         <Layout>
-          <h1 style={{ fontSize: '2.4rem' }}>{'>_ '}Sobre</h1>
-          <br />
+          <h1>{'>_ '}Sobre</h1>
           <p>
             Nome: Vinícius Mello <br />
             Email: viniciusbmello@gmail.com <br />

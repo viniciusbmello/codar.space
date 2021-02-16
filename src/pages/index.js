@@ -22,8 +22,7 @@ const Index = () => {
         trackOnWindow={true}
       >
         <Layout>
-          <h1 style={{ fontSize: '2.4rem' }}>{'>_ '}Início</h1>
-          <br />
+          <h1>{'>_ '}Início</h1>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam non
             finibus lacus, eget faucibus metus. Nam rhoncus accumsan risus, quis

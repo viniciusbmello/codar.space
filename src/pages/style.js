@@ -1,12 +1,6 @@
 import styled from 'styled-components'
 
 const Layout = styled.div`
-  background: rgba(0, 0, 0, 0.25);
-  padding: 3rem;
-  backdrop-filter: blur(4px);
-  -webkit-backdrop-filter: blur(4px);
-  border-radius: 0.25rem;
-
   margin: auto;
   max-width: 50rem;
 
@@ -16,7 +10,24 @@ const Layout = styled.div`
 
   transform-style: preserve-3d;
 
+  h1 {
+    background: rgba(0, 0, 0, 0.25);
+    padding: 2rem 3rem;
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    border-radius: 0.25rem;
+
+    font-size: 2.4rem;
+    margin-bottom: 1px;
+  }
+
   p {
+    background: rgba(0, 0, 0, 0.25);
+    padding: 2rem 3rem;
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    border-radius: 0.25rem;
+
     text-align: justify;
     text-justify: inter-word;
   }
