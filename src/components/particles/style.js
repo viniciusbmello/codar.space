@@ -7,19 +7,15 @@ const Layout = styled.div`
   align-items: center;
   overflow: hidden;
 
-  height: 100vh;
-  width: 100vw;
+  opacity: 1;
+  animation: opacityChange 3s;
 
-  animation: grow 0.5s;
-
-  @keyframes grow {
+  @keyframes opacityChange {
     from {
-      height: 0;
-      width: 0;
+      opacity: 0;
     }
     to {
-      height: 100vh;
-      width: 100vw;
+      opacity: 1;
     }
   }
 `
