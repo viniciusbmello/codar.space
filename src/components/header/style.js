@@ -9,13 +9,13 @@ const Layout = styled.div`
   left: 0;
 
   width: 100vw;
-  height: 6rem;
+  height: 7rem;
 
   -webkit-user-select: none; /* Safari */
   -ms-user-select: none; /* IE 10 and IE 11 */
   user-select: none; /* Standard syntax */
 
-  background: rgba(0, 0, 0, 0.5);
+  background: rgba(255, 255, 255, 0.1);
   color: white;
 
   z-index: 998;
@@ -49,7 +49,7 @@ const Layout = styled.div`
     text-decoration: none;
     text-transform: uppercase;
     font: 400 2rem 'Montserrat', sans-serif;
-    color: lightgray;
+    color: white;
     overflow: hidden;
     padding: 0 1rem;
   }

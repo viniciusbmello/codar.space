@@ -21,9 +21,7 @@ const App = ({ Component, pageProps }) => {
       <NProgressStyle />
       <Header />
       <ParticleComponent />
-      <div id='wrapper'>
-        <Component {...pageProps} />
-      </div>
+      <Component {...pageProps} />
     </ThemeProvider>
   )
 }
