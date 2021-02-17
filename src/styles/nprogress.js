@@ -6,7 +6,7 @@ const NProgressStyle = createGlobalStyle`
 }
 
 #nprogress .bar {
-  background: lightcyan;
+  background: #845EC2;
   position: fixed;
   z-index: 999;
   top: 0;

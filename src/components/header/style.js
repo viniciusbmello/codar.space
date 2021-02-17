@@ -15,6 +15,9 @@ const Layout = styled.div`
   -ms-user-select: none; /* IE 10 and IE 11 */
   user-select: none; /* Standard syntax */
 
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+
   z-index: 998;
 
   .header-content {
@@ -62,12 +65,10 @@ const Layout = styled.div`
     position: absolute;
     top: -2rem;
     left: 0;
-    color: white;
   }
 
   .active a span {
     font-weight: 700;
-    color: white;
   }
 
   li:not(.active) a:hover span {
