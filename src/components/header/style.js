@@ -11,12 +11,15 @@ const Layout = styled.div`
   width: 100vw;
   height: 7rem;
 
+  color: white;
   -webkit-user-select: none; /* Safari */
   -ms-user-select: none; /* IE 10 and IE 11 */
   user-select: none; /* Standard syntax */
 
   background: rgba(255, 255, 255, 0.1);
-  color: white;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(2px);
+  -webkit-backdrop-filter: blur(2px);
 
   z-index: 998;
 

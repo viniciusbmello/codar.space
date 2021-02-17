@@ -9,6 +9,9 @@ const Layout = styled.div`
     right: 0;
 
     background: rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(2px);
+    -webkit-backdrop-filter: blur(2px);
+    border-left: 1px solid rgba(255, 255, 255, 0.1);
   }
 `
 
