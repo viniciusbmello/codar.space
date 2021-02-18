@@ -29,5 +29,9 @@
     "eslint-plugin-promise": "^4.2.1",
     "eslint-plugin-react": "^7.22.0",
     "prettier": "^2.2.1"
-  }
+  },
+  "main": "index.js",
+  "repository": "https://github.com/viniciusbmello/codar.space.git",
+  "author": "<viniciusbmello@gmail.com>",
+  "license": "MIT"
 }
