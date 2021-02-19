@@ -47,8 +47,8 @@ const Layout = styled.div`
 
   .buttonContainer {
     position: fixed;
-    left: 10vw;
-    right: 10vw;
+    left: 5vw;
+    right: 5vw;
     bottom: 5vh;
   }
 
@@ -57,10 +57,10 @@ const Layout = styled.div`
     align-items: center;
     justify-content: center;
 
-    width: 38rem;
+    width: 100%;
     height: 7rem;
     margin: auto;
-    font-size: 3rem;
+    font-size: 2.8rem;
 
     color: white;
     text-decoration: none;
@@ -71,6 +71,21 @@ const Layout = styled.div`
 
     backdrop-filter: blur(4px);
     -webkit-backdrop-filter: blur(4px);
+  }
+
+  .buttonContainer a span {
+    transform: rotate(10deg);
+    transform-origin: bottom left;
+    animation: helloHand 0.5s ease 1s infinite alternate;
+  }
+
+  @keyframes helloHand {
+    from {
+      transform: rotate(10deg);
+    }
+    to {
+      transform: rotate(15deg);
+    }
   }
 `
 

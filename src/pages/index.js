@@ -37,9 +37,15 @@ const Index = () => {
             toda a sua identidade para a Web.
           </p>
           <div className='buttonContainer'>
-            <a href='#'>
+            <a
+              target='_blank'
+              rel='noopener noreferrer'
+              href='https://api.whatsapp.com/send?phone=5545991384052'
+            >
               Entre em Contato!
-              <HandSvg color='white' width='4rem' height='4rem' />
+              <span>
+                <HandSvg color='white' width='4rem' height='4rem' />
+              </span>
             </a>
           </div>
         </div>
