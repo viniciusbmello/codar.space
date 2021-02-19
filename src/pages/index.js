@@ -7,7 +7,7 @@ const Index = () => {
   return (
     <>
       <Head>
-        <title>Codar.Space</title>
+        <title>codar.space</title>
       </Head>
       <Layout>
         <div className='wrapper'>
@@ -34,6 +34,9 @@ const Index = () => {
             Feito de forma personalizada para levar <br />
             toda a sua identidade para a Web.
           </p>
+          <div className='buttonContainer'>
+            <a href='#'>Entre em Contato!</a>
+          </div>
         </div>
       </Layout>
     </>

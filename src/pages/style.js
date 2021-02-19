@@ -39,10 +39,37 @@ const Layout = styled.div`
     font-weight: 500;
   }
 
-  p {
-    padding-top: 4rem;
-    text-align: right;
+  .wrapper p {
+    margin-top: 5vh;
     font-size: 4.5vw;
+    text-align: right;
+  }
+
+  .buttonContainer {
+    position: fixed;
+    left: 10vw;
+    right: 10vw;
+    bottom: 5vh;
+  }
+
+  .buttonContainer a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 100%;
+    height: 15vw;
+    font-size: 5vw;
+
+    color: white;
+    text-decoration: none;
+
+    border-radius: 1rem;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    background: rgba(0, 0, 0, 0.2);
+
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
   }
 `
 
