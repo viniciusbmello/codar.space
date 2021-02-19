@@ -4,6 +4,7 @@ const Layout = styled.div`
   .wrapper h1 {
     line-height: 9vw;
     font-weight: 300;
+    user-select: none;
   }
 
   .alignRight h1 {
