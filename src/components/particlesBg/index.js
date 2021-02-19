@@ -22,8 +22,8 @@ const ParticleBg = (props) => {
           params={{
             particles: {
               number: {
-                value: 100,
-                density: { enable: true, value_area: 4000 }
+                value: 150,
+                density: { enable: true, value_area: 5000 }
               },
               lineLinked: { enable: false },
               move: { speed: 0.3 },
@@ -46,7 +46,7 @@ const ParticleBg = (props) => {
                 connect: {
                   distance: 200,
                   radius: 240,
-                  links: { opacity: 0.05 }
+                  links: { opacity: 0.1 }
                 }
               }
             },

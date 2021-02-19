@@ -14,6 +14,9 @@ const Layout = styled.div`
 
   background: rgba(255, 255, 255, 0.1);
   box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.2);
+  
+  backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
 
   user-select: none;
 
