@@ -8,6 +8,7 @@ import NProgressStyle from '../styles/nprogress'
 import theme from '../styles/theme'
 
 import Header from '../components/header'
+import ParticlesBg from '../components/particlesBg'
 
 Router.events.on('routeChangeStart', (url) => NProgress.start())
 Router.events.on('routeChangeComplete', () => NProgress.done())
@@ -19,6 +20,7 @@ const App = ({ Component, pageProps }) => {
       <GlobalStyle />
       <NProgressStyle />
       <Header />
+      <ParticlesBg width='120vw' height='120vh' />
       <Component {...pageProps} />
     </ThemeProvider>
   )

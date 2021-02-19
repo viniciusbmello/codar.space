@@ -66,7 +66,7 @@ const Layout = styled.div`
     text-decoration: none;
 
     border-radius: 2rem;
-    border: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.2);
     background: rgba(0, 0, 0, 0.2);
 
     backdrop-filter: blur(4px);
