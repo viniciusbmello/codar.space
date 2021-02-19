@@ -3,6 +3,8 @@ import Head from 'next/head'
 
 import Layout from './style'
 
+import HandSvg from '../assets/svgs/handSvg'
+
 const Index = () => {
   return (
     <>
@@ -35,7 +37,10 @@ const Index = () => {
             toda a sua identidade para a Web.
           </p>
           <div className='buttonContainer'>
-            <a href='#'>Entre em Contato!</a>
+            <a href='#'>
+              Entre em Contato!
+              <HandSvg color='white' width='4rem' height='4rem' />
+            </a>
           </div>
         </div>
       </Layout>

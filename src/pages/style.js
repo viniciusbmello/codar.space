@@ -40,8 +40,8 @@ const Layout = styled.div`
   }
 
   .wrapper p {
-    margin-top: 5vh;
-    font-size: 4.5vw;
+    margin-top: 4vh;
+    font-size: 4vw;
     text-align: right;
   }
 
@@ -57,14 +57,15 @@ const Layout = styled.div`
     align-items: center;
     justify-content: center;
 
-    width: 100%;
-    height: 15vw;
-    font-size: 5vw;
+    width: 38rem;
+    height: 7rem;
+    margin: auto;
+    font-size: 3rem;
 
     color: white;
     text-decoration: none;
 
-    border-radius: 1rem;
+    border-radius: 2rem;
     border: 1px solid rgba(255, 255, 255, 0.1);
     background: rgba(0, 0, 0, 0.2);
 
