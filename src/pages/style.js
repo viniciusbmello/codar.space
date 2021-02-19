@@ -17,17 +17,19 @@ const Layout = styled.div`
 
   .firstLine h1 {
     display: inline;
-    font-size: 8vw;
+    font-size: 6vw;
+    line-height: 12vw;
   }
 
   .firstLine span {
     font-weight: 400;
-    font-size: 12vw;
+    font-size: 10vw;
   }
 
   .secondLine h1 {
-    font-weight: 500;
-    font-size: 13vw;
+    font-family: 'Parisienne', sans-serif;
+    font-weight: 400;
+    font-size: 15vw;
     color: #ffcde4;
   }
 
@@ -65,7 +67,7 @@ const Layout = styled.div`
     width: 100%;
     height: 7rem;
     margin: auto;
-    font-size: 2.8rem;
+    font-size: 2.2rem;
 
     color: white;
     text-decoration: none;
@@ -82,6 +84,7 @@ const Layout = styled.div`
   .buttonContainer a:hover {
     box-shadow: 0 0 0 1px #ffcde4;
     background: rgba(0, 0, 0, 0.2);
+    font-size: 2.4rem;
   }
 
   .buttonContainer a span {
@@ -106,6 +109,7 @@ const Layout = styled.div`
 
     .firstLine h1 {
       font-size: 6.2rem;
+      line-height: 10rem;
     }
 
     .firstLine span {
@@ -113,7 +117,7 @@ const Layout = styled.div`
     }
 
     .secondLine h1 {
-      font-size: 10rem;
+      font-size: 11.4rem;
     }
 
     .thirdLine h1 {
@@ -130,7 +134,7 @@ const Layout = styled.div`
 
     .buttonContainer a {
       width: 62rem;
-      font-size: 3rem;
+      font-size: 2.4rem;
     }
   }
 `
