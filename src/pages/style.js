@@ -1,17 +1,48 @@
 import styled from 'styled-components'
 
 const Layout = styled.div`
-  .Bg-DarkGlass {
-    position: fixed;
-    width: 40%;
-    top: 7rem;
-    bottom: 0;
-    right: 0;
+  .wrapper h1 {
+    line-height: 9vw;
+    font-weight: 300;
+  }
 
-    background: rgba(0, 0, 0, 0.1);
-    backdrop-filter: blur(2px);
-    -webkit-backdrop-filter: blur(2px);
-    border-left: 1px solid rgba(255, 255, 255, 0.1);
+  .alignRight h1 {
+    text-align: right;
+  }
+
+  .firstLine h1 {
+    display: inline;
+    font-size: 8vw;
+  }
+
+  .firstLine span {
+    font-weight: 400;
+    font-size: 12vw;
+  }
+
+  .secondLine h1 {
+    font-weight: 500;
+    font-size: 13vw;
+    color: #ffcde4;
+  }
+
+  .thirdLine h1 {
+    font-size: 8vw;
+  }
+
+  .forthLine h1 {
+    font-size: 13vw;
+    color: #ffcde4;
+  }
+
+  .forthLine span {
+    font-weight: 500;
+  }
+
+  p {
+    padding-top: 4rem;
+    text-align: right;
+    font-size: 4.5vw;
   }
 `
 

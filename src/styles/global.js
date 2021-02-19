@@ -17,7 +17,7 @@ const GlobalStyle = createGlobalStyle`
   }
 
   body {
-    background: linear-gradient(to right top, #442B6C, #7247CD, #86A8E7); 
+    background: linear-gradient(to right top, #432B6C, #7247CD, #86A8E7); 
     -webkit-font-smoothing: antialiased;
     text-rendering: optimizeLegibility;
   }
@@ -29,7 +29,7 @@ const GlobalStyle = createGlobalStyle`
   }
 
   body, input, button, textarea {
-    font: 400 1.6rem 'Montserrat', sans-serif;
+    font: 300 1.6rem 'Montserrat', sans-serif;
     color: white;
   }
 `
