@@ -1,6 +1,10 @@
 import styled from 'styled-components'
 
 const Layout = styled.div`
+  * {
+    transition: 0.2s linear;
+  }
+
   .wrapper h1 {
     line-height: 9vw;
     font-weight: 300;
@@ -73,8 +77,6 @@ const Layout = styled.div`
 
     backdrop-filter: blur(4px);
     -webkit-backdrop-filter: blur(4px);
-
-    transition: 0.1s linear;
   }
 
   .buttonContainer a:hover {
@@ -97,29 +99,29 @@ const Layout = styled.div`
     }
   }
 
-  @media screen and (min-width: 1100px) {
+  @media screen and (min-width: 760px) {
     .wrapper h1 {
-      line-height: 6rem;
+      line-height: 7rem;
     }
 
     .firstLine h1 {
-      font-size: 5.5rem;
+      font-size: 6.2rem;
     }
 
     .firstLine span {
-      font-size: 8.3rem;
+      font-size: 9.2rem;
     }
 
     .secondLine h1 {
-      font-size: 9rem;
+      font-size: 10rem;
     }
 
     .thirdLine h1 {
-      font-size: 5.5rem;
+      font-size: 6.2rem;
     }
 
     .forthLine h1 {
-      font-size: 9rem;
+      font-size: 10rem;
     }
 
     .wrapper p {
