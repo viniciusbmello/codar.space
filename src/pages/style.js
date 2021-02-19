@@ -65,6 +65,7 @@ const Layout = styled.div`
 
     color: white;
     text-decoration: none;
+    user-select: none;
 
     border-radius: 2rem;
     box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.2);
@@ -93,6 +94,41 @@ const Layout = styled.div`
     }
     to {
       transform: rotate(16deg);
+    }
+  }
+
+  @media screen and (min-width: 1100px) {
+    .wrapper h1 {
+      line-height: 6rem;
+    }
+
+    .firstLine h1 {
+      font-size: 5.5rem;
+    }
+
+    .firstLine span {
+      font-size: 8.3rem;
+    }
+
+    .secondLine h1 {
+      font-size: 9rem;
+    }
+
+    .thirdLine h1 {
+      font-size: 5.5rem;
+    }
+
+    .forthLine h1 {
+      font-size: 9rem;
+    }
+
+    .wrapper p {
+      font-size: 3rem;
+    }
+
+    .buttonContainer a {
+      width: 62rem;
+      font-size: 3rem;
     }
   }
 `
