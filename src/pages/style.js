@@ -67,10 +67,17 @@ const Layout = styled.div`
 
     border-radius: 2rem;
     box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.2);
-    background: rgba(0, 0, 0, 0.2);
+    background: rgba(0, 0, 0, 0.25);
 
     backdrop-filter: blur(4px);
     -webkit-backdrop-filter: blur(4px);
+
+    transition: 0.1s linear;
+  }
+
+  .buttonContainer a:hover {
+    box-shadow: 0 0 0 1px #ffcde4;
+    background: rgba(0, 0, 0, 0.2);
   }
 
   .buttonContainer a span {
