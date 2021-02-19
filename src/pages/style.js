@@ -76,7 +76,7 @@ const Layout = styled.div`
   .buttonContainer a span {
     transform: rotate(10deg);
     transform-origin: bottom left;
-    animation: helloHand 0.5s ease 1s infinite alternate;
+    animation: helloHand 0.5s ease infinite alternate;
   }
 
   @keyframes helloHand {
@@ -84,7 +84,7 @@ const Layout = styled.div`
       transform: rotate(10deg);
     }
     to {
-      transform: rotate(15deg);
+      transform: rotate(16deg);
     }
   }
 `
