@@ -16,9 +16,11 @@ const Layout = styled.div`
   box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.2);
   
   backdrop-filter: blur(4px);
-    -webkit-backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
 
   user-select: none;
+
+  z-index: 999;
 
   h1 {
     font-size: 4rem;
